@@ -35,6 +35,9 @@
   ul {
     @apply flex justify-center items-center;
   }
+  input {
+    @apply focus:outline-[var(--color-gray-3)];
+  }
 }
 
 @layer components {
@@ -44,6 +47,7 @@
   }
   .btn {
     @apply bg-[var(--color-primary-3)] flex items-center justify-center;
+    @apply hover:bg-[var(--color-primary-2)];
   }
   .btn-sm {
     @apply btn;
@@ -57,6 +61,11 @@
     @apply w-full border-2 border-[var(--color-primary-1)] p-[var(--sp-3)] rounded-[var(--sp-3)] flex justify-between items-center;
     @apply hover:bg-[var(--color-gray-1)];
     @apply xl:px-[var(--sp-5)];
+  }
+  .tab {
+    @apply px-[var(--sp-1)] py-[var(--sp-3)] rounded-t-[var(--sp-3)] text-center w-full subtitle cursor-pointer;
+    @apply xl:p-[var(--sp-3)];
+    @apply hover:bg-[var(--color-primary-3)];
   }
 }
 

@@ -8,7 +8,7 @@ export default function Tab({ position, state, setState, title }) {
     <li
       onClick={clickHandler}
       className={
-        "px-[var(--sp-1)] py-[var(--sp-3)] xl:p-[var(--sp-3)] rounded-t-[var(--sp-3)] text-center w-full subtitle cursor-pointer " +
+        "tab " +
         (state === 1
           ? "bg-[var(--color-primary-5)]"
           : "bg-[var(--color-primary-2)]")
