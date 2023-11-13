@@ -7,7 +7,7 @@ import { ShootingStar } from "@phosphor-icons/react";
 
 export default function Donation() {
   return (
-    <div className="flex gap-[var(--sp-5)] flex-col xl:flex-row">
+    <div id="donations" className="flex gap-[var(--sp-5)] flex-col xl:flex-row">
       <div className="flex flex-col justify-between">
         <div>
           <SectionTitle title={"小額捐款"} subtitle={"Small Donations"} />

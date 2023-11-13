@@ -2,7 +2,7 @@ import SectionTitle from "../section-title";
 
 export default function Claims() {
   return (
-    <div className="xl:flex xl:gap-[var(--sp-5)]">
+    <div id="claims" className="xl:flex xl:gap-[var(--sp-5)]">
       <SectionTitle title={"候選主張"} subtitle={"Candidate Claims"} />
       <div className="flex-1 mt-[var(--sp-3)] xl:mt-auto">
         <p className="subtitle">

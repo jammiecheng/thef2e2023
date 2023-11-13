@@ -1,9 +1,12 @@
-import stamp from "../../images/icons/vote.png";
-import arrow from "../../images/icons/ArrowRight.png";
+import stamp from "../../images/vote.png";
+import { ArrowRight } from "@phosphor-icons/react";
 
 export default function Header() {
   return (
-    <header className="bg-[var(--color-gray-4)] rounded-[var(--sp-3)] flex items-center justify-center px-[var(--sp-1)] relative mt-[344px] xl:m-auto xl:w-[90%]">
+    <header
+      id="header"
+      className="bg-[var(--color-gray-4)] rounded-[var(--sp-3)] flex items-center justify-center px-[var(--sp-1)] relative mt-[344px] xl:m-auto xl:w-[90%]"
+    >
       <p className="text-[80px] leading-normal tracking-[4px] font-bold text-[var(--color-gray-6)] xl:text-[260px] xl:leading-[320px] xl:tracking-[13px]">
         喵喵權益<br></br>我帶頭
       </p>
@@ -22,6 +25,7 @@ export default function Header() {
         <span className="text-[var(--color-primary-3)] title-24 xl:display">
           黑新星
         </span>
+
         <img
           className="w-[var(--sp-5)] xl:w-[var(--sp-7)]"
           src={stamp}
@@ -32,7 +36,7 @@ export default function Header() {
         <div className="header-bg relative">
           <button className="btn-sm absolute px-[var(--sp-3)] py-[var(--sp-2)] gap-[var(--sp-2)] left-[var(--sp-5)] bottom-[var(--sp-5)]">
             候選人簡介
-            <img className="w-[var(--sp-4)]" src={arrow} alt="arrow-right" />
+            <ArrowRight color="#000000" weight="regular" size={24} />
           </button>
         </div>
       </div>

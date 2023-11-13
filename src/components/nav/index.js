@@ -27,10 +27,10 @@ export default function Nav() {
   };
 
   return (
-    <nav className="nav z-50 bg-[var(--color-gray-6)]">
-      <div>
+    <nav id="nav" className="nav z-50 bg-[var(--color-gray-6)]">
+      <a href="#header">
         <img className="h-[var(--sp-6)]" src={logo} alt="logo" />
-      </div>
+      </a>
       <div className={"flex items-center " + (isDesktop ? "" : "hidden")}>
         <a
           href="#donation"

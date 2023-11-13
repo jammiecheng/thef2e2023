@@ -1,4 +1,4 @@
-import arrow from "../../images/icons/ArrowRight.png";
+import { ArrowRight } from "@phosphor-icons/react";
 
 export default function EventCard({ img, title, content, date }) {
   return (
@@ -20,7 +20,7 @@ export default function EventCard({ img, title, content, date }) {
           <span className="text-[var(--color-primary-1)]">{date}</span>
           <button className="btn-sm px-[var(--sp-3)] py-[var(--sp-2)] gap-[var(--sp-2)]">
             閱讀更多
-            <img className="w-[var(--sp-4)]" src={arrow} alt="arrow-right" />
+            <ArrowRight color="#000000" weight="regular" size={24} />
           </button>
         </div>
       </div>

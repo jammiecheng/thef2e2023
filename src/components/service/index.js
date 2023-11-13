@@ -3,7 +3,7 @@ import maio from "../../images/Black-02.png";
 
 export default function Service() {
   return (
-    <div className="xl:flex xl:gap-[var(--sp-5)]">
+    <div id="service" className="xl:flex xl:gap-[var(--sp-5)]">
       <div className="relative xl:w-[461px]">
         <SectionTitle title={"服務信箱"} subtitle={"Service Mail"} />
         <p className="title-28 text-[var(--color-1)] mt-[var(--sp-3)] xl:mt-[var(--sp-5)]">

@@ -6,7 +6,7 @@ import event3 from "../../images/pic-03 1.png";
 
 export default function Events() {
   return (
-    <div className="xl:flex xl:gap-[var(--sp-5)]">
+    <div id="events" className="xl:flex xl:gap-[var(--sp-5)]">
       <SectionTitle title={"最新活動"} subtitle={"Latest Events"} />
       <ul className="flex-col gap-[var(--sp-5)] mt-[var(--sp-3)] xl:flex-1 xl:mt-auto">
         <EventCard

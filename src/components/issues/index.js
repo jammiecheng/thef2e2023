@@ -8,7 +8,7 @@ export default function Issues() {
   const [state, setState] = useState([1, 0, 0]);
 
   return (
-    <div>
+    <div id="issues">
       <SectionTitle title={"政策議題"} subtitle={"Policy Issues"} />
       <div className="mt-[var(--sp-5)]">
         <ul>

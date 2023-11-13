@@ -35,11 +35,13 @@ export default function SideBar() {
           (showSidebar && !isDesktop ? "" : "hidden")
         }
       >
-        <img
-          className="h-[var(--sp-6)] mb-[var(--sp-5)]"
-          src={logo}
-          alt="logo"
-        />
+        <a href="#header">
+          <img
+            className="h-[var(--sp-6)] mb-[var(--sp-5)]"
+            src={logo}
+            alt="logo"
+          />
+        </a>
         <ul className="gap-[var(--sp-3)] flex-col items-start">
           <li>
             <a
