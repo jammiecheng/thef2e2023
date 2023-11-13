@@ -5,24 +5,24 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="bg-[var(--color-gray-4)] rounded-[var(--sp-3)] flex items-center justify-center px-[var(--sp-1)] relative mt-[344px] xl:m-auto xl:w-[90%]"
+      className="header"
     >
-      <p className="text-[80px] leading-normal tracking-[4px] font-bold text-[var(--color-gray-6)] xl:text-[260px] xl:leading-[320px] xl:tracking-[13px]">
-        喵喵權益<br></br>我帶頭
+      <p className="header-title">
+        喵喵權益我帶頭
       </p>
-      <p className="px-[var(--sp-3)] py-[var(--sp-1)] btn rounded-full bg-[var(--color-gray-1)] flex items-center gap-[var(--sp-2)] absolute top-[98px] right-[11px] xl:px-[var(--sp-5)] xl:py-[var(--sp-2)] xl:top-[calc(50%-44px)] xl:left-[-20px] xl:right-auto">
+      <p className="header-float-item">
         <img
           className="w-[var(--sp-5)] xl:w-[var(--sp-7)]"
           src={stamp}
           alt="vote-stemp"
         />
-        <span className="text-[var(--color-primary-3)] title-24 xl:display">
+        <span className="header-float-text">
           立委請支持
         </span>
-        <span className="text-[var(--color-primary-3)] title-24 xl:display border-[3px] border-[var(--color-primary-3)] rounded-[var(--sp-6)] w-[var(--sp-5)] xl:w-[var(--sp-7)] h-[var(--sp-5)] xl:h-[var(--sp-7)] flex justify-center items-center">
+        <span className="header-float-text border-[3px] border-[var(--color-primary-3)] rounded-[var(--sp-6)] w-[var(--sp-5)] xl:w-[var(--sp-7)] h-[var(--sp-5)] xl:h-[var(--sp-7)] flex justify-center items-center">
           1
         </span>
-        <span className="text-[var(--color-primary-3)] title-24 xl:display">
+        <span className="header-float-text">
           黑新星
         </span>
 

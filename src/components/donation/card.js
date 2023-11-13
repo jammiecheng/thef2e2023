@@ -15,10 +15,10 @@ export default function DonationCard({ title, price, img }) {
     <li className="w-full">
       <button className="donation-card group">
         <div>
-          <p className="title-28 text-[var(--color-gray-1)] group-hover:text-[var(--color-primary-3)]">
+          <p className="title-28 text-[var(--color-gray-1)] group-hover:text-[var(--color-primary-3)] transition-all duration-300">
             {title} |{" "}
             {typeof price !== typeof "" ? (
-              <span className="text-[var(--color-gray-3)] text-base leading-[1.75] group-hover:text-[var(--color-primary-5)]">
+              <span className="text-[var(--color-gray-3)] text-base leading-[1.75] group-hover:text-[var(--color-primary-5)] transition-all duration-300">
                 {" "}
                 NT${" "}
               </span>

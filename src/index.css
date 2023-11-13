@@ -35,8 +35,15 @@
   ul {
     @apply flex justify-center items-center;
   }
-  input {
+  input,
+  textarea {
     @apply focus:outline-[var(--color-gray-3)];
+  }
+  nav > div > ul a {
+    @apply hover:text-[var(--color-primary-1)] transition-all duration-300;
+  }
+  footer > div a {
+    @apply hover:text-[var(--color-primary-4)] transition-all duration-300;
   }
 }
 
@@ -46,26 +53,42 @@
     @apply xl:px-[var(--sp-6)];
   }
   .btn {
-    @apply bg-[var(--color-primary-3)] flex items-center justify-center;
+    @apply bg-[var(--color-primary-3)] flex items-center justify-center transition-all duration-300;
     @apply hover:bg-[var(--color-primary-2)];
   }
   .btn-sm {
     @apply btn;
     @apply rounded-[var(--sp-5)];
   }
+  .header {
+    @apply bg-[var(--color-gray-4)] rounded-[var(--sp-3)] flex items-center justify-center px-[var(--sp-1)] relative mt-[344px];
+    @apply md:m-auto md:w-[90%];
+  }
+  .header-title {
+    @apply text-[80px] leading-normal tracking-[4px] font-bold text-[var(--color-gray-6)];
+    @apply xl:text-[260px] xl:leading-[320px] xl:tracking-[13px];
+  }
+  .header-float-item {
+    @apply px-[var(--sp-3)] py-[var(--sp-1)] btn rounded-full bg-[var(--color-gray-1)] flex items-center gap-[var(--sp-2)] absolute top-[98px] left-3;
+    @apply xl:px-[var(--sp-5)] xl:py-[var(--sp-2)] xl:top-[calc(50%-44px)] xl:left-[-20px] xl:right-auto;
+  }
   .header-bg {
     background: url("../src/images/Black-01.png");
     @apply w-[305px] h-[344px] xl:w-[361px] xl:h-[407px] bg-center bg-no-repeat bg-[length:305px_344px] xl:bg-[length:361px_407px];
   }
   .donation-card {
-    @apply w-full border-2 border-[var(--color-primary-1)] p-[var(--sp-3)] rounded-[var(--sp-3)] flex justify-between items-center;
+    @apply w-full border-2 border-[var(--color-primary-1)] p-[var(--sp-3)] rounded-[var(--sp-3)] flex justify-between items-center transition-all duration-300;
     @apply hover:bg-[var(--color-gray-1)];
     @apply xl:px-[var(--sp-5)];
   }
   .tab {
-    @apply px-[var(--sp-1)] py-[var(--sp-3)] rounded-t-[var(--sp-3)] text-center w-full subtitle cursor-pointer;
+    @apply px-[var(--sp-1)] py-[var(--sp-3)] rounded-t-[var(--sp-3)] text-center w-full subtitle cursor-pointer transition-all duration-300;
     @apply xl:p-[var(--sp-3)];
     @apply hover:bg-[var(--color-primary-3)];
+  }
+  .footer {
+    @apply mt-[var(--sp-7)] px-[var(--sp-3)] py-[var(--sp-5)] bg-[var(--color-gray-1)] justify-between items-start flex-wrap;
+    @apply xl:flex xl:px-[var(--sp-7)] xl:py-[var(--sp-5)];
   }
 }
 
@@ -81,5 +104,9 @@
   }
   .subtitle {
     @apply text-xl leading-normal font-medium;
+  }
+  .header-float-text {
+    @apply text-[var(--color-primary-3)] title-24;
+    @apply xl:display;
   }
 }

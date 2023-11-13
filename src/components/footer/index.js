@@ -21,7 +21,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="mt-[var(--sp-7)] px-[var(--sp-3)] py-[var(--sp-5)] bg-[var(--color-gray-1)] xl:flex justify-between items-start flex-wrap xl:px-[var(--sp-7)] xl:py-[var(--sp-5)]">
+    <footer className="footer">
       <img className="w-[161px]" src={logo} alt="logo" />
       <ul
         className={
@@ -47,7 +47,7 @@ export default function Footer() {
       </ul>
       <div className="flex gap-[var(--sp-5)] items-start flex-col xl:flex-row">
         <ul className="gap-[var(--sp-3)] justify-start items-start flex-wrap xl:gap-[var(--sp-1)]] xl:flex-col">
-          <li className="basis-full text-[var(--color-primary-3)] xl:mb-[calc(var(--sp-1)*3)] xl:basis-auto">
+          <li className="basis-full text-[var(--color-primary-3)] mb-[calc(var(--sp-1)*3)] xl:basis-auto xl:mb-auto">
             快速連結
           </li>
           <li>

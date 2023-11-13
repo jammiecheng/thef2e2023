@@ -6,7 +6,7 @@ export default function TabContent({ state, title, item }) {
       <p className="text-[var(--color-primary-1)] title-28 text-center mb-[var(--sp-6)]">
         {title}
       </p>
-      <ul className="flex-col gap-[var(--sp-5)] xl:flex-row xl:gap-0">
+      <ul className="flex-col gap-[var(--sp-5)] lg:flex-row lg:gap-0 lg:items-start">
         <IssueCard
           img={item[0].img}
           title={item[0].subtitle}

@@ -4,7 +4,7 @@ export default function Claims() {
   return (
     <div id="claims" className="xl:flex xl:gap-[var(--sp-5)]">
       <SectionTitle title={"候選主張"} subtitle={"Candidate Claims"} />
-      <div className="flex-1 mt-[var(--sp-3)] xl:mt-auto">
+      <div className="flex-1 mt-[var(--sp-3)] xl:mt-0">
         <p className="subtitle">
           我黑新星堅信，藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的
           GDP 經濟帶來巨大效益。<br></br>

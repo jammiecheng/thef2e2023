@@ -4,8 +4,29 @@ import { MoonStars } from "@phosphor-icons/react";
 import { Planet } from "@phosphor-icons/react";
 import { Sun } from "@phosphor-icons/react";
 import { ShootingStar } from "@phosphor-icons/react";
+import { CountUp } from "countup.js";
+import { useEffect, useRef } from "react";
 
 export default function Donation() {
+  // const [inViewport, setInViewport] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    var countUp = new CountUp(ref.current, 987655873);
+    const update = () => {
+      if (
+        window.scrollY - document.getElementById("donations").offsetTop >=
+        (window.innerHeight / 2) * -1
+      ) {
+        countUp.start();
+      } else {
+        countUp.reset();
+      }
+    };
+    window.addEventListener("scroll", update);
+    return () => window.removeEventListener("scroll", update);
+  }, []);
+
   return (
     <div id="donations" className="flex gap-[var(--sp-5)] flex-col xl:flex-row">
       <div className="flex flex-col justify-between">
@@ -19,7 +40,9 @@ export default function Donation() {
           <p className="text-[var(--color-primary-3)] subtitle">
             目前贊助總金額
           </p>
-          <p className="text-[var(--color-primary-3)] display">987,655,873</p>
+          <p ref={ref} className="text-[var(--color-primary-3)] display">
+            987,655,873
+          </p>
         </div>
       </div>
       <ul className="flex-col gap-[var(--sp-3)] flex-1">

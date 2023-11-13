@@ -24,15 +24,15 @@ export default function SideBar() {
     <>
       <div
         className={
-          "fixed w-2/5 top-0 left-0 bottom-0 bg-opacity-30 backdrop-blur-[4px] z-50 " +
-          (showSidebar && !isDesktop ? "" : "hidden")
+          "fixed w-2/5 top-0 -right-full bottom-0 bg-opacity-30 backdrop-blur-[4px] z-50 transition-all " +
+          (showSidebar && !isDesktop ? "left-0" : " opacity-0")
         }
         onClick={() => setShowSidebar(false)}
       ></div>
       <div
         className={
-          "fixed bg-[var(--color-gray-6)] w-3/5 top-0 bottom-0 right-0 px-[var(--sp-3)] py-[var(--sp-5)] z-50 " +
-          (showSidebar && !isDesktop ? "" : "hidden")
+          "fixed bg-[var(--color-gray-6)] w-3/5 top-0 bottom-0 -right-full px-[var(--sp-3)] py-[var(--sp-5)] z-50 transition-all " +
+          (showSidebar && !isDesktop ? "right-0" : "opacity-0")
         }
       >
         <a href="#header">

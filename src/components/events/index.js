@@ -8,7 +8,7 @@ export default function Events() {
   return (
     <div id="events" className="xl:flex xl:gap-[var(--sp-5)]">
       <SectionTitle title={"最新活動"} subtitle={"Latest Events"} />
-      <ul className="flex-col gap-[var(--sp-5)] mt-[var(--sp-3)] xl:flex-1 xl:mt-auto">
+      <ul className="flex-1 flex-col items-start justify-start gap-[var(--sp-5)] mt-[var(--sp-3)] xl:mt-auto xl:max-w-[calc(100%-296px)]">
         <EventCard
           img={event1}
           title={"參與台北寵物論壇，爭取貓咪友善環境"}
