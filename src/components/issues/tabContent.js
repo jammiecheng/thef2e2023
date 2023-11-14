@@ -2,7 +2,12 @@ import IssueCard from "./card";
 
 export default function TabContent({ state, title, item }) {
   return (
-    <div className={"bg-[var(--color-primary-5)] px-[var(--sp-3)] py-[var(--sp-5)] xl:px-[var(--sp-5)] " + (state === 1 ? "" : "hidden")}>
+    <div
+      className={
+        "bg-[var(--color-primary-5)] px-[var(--sp-3)] py-[var(--sp-5)] xl:px-[var(--sp-5)] transition-all duration-300 " +
+        (state === 1 ? "" : "hidden")
+      }
+    >
       <p className="text-[var(--color-primary-1)] title-28 text-center mb-[var(--sp-6)]">
         {title}
       </p>

@@ -13,10 +13,13 @@ export default function Donation() {
 
   useEffect(() => {
     var countUp = new CountUp(ref.current, 987655873);
+
     const update = () => {
       if (
-        window.scrollY - document.getElementById("donations").offsetTop >=
-        (window.innerHeight / 2) * -1
+        window.scrollY - document.getElementById("donations").offsetTop >
+          (window.innerHeight / 2) * -1 &&
+        window.scrollY - document.getElementById("donations").offsetTop <
+          window.innerHeight / 2
       ) {
         countUp.start();
       } else {

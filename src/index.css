@@ -61,20 +61,26 @@
     @apply rounded-[var(--sp-5)];
   }
   .header {
-    @apply bg-[var(--color-gray-4)] rounded-[var(--sp-3)] flex items-center justify-center px-[var(--sp-1)] relative mt-[344px];
-    @apply md:m-auto md:w-[90%];
+    @apply bg-[var(--color-gray-4)] rounded-[var(--sp-3)] flex items-center justify-center px-[var(--sp-2)] relative mt-[344px];
+    @apply md:mx-auto md:w-[90%] lg:px-[var(--sp-1)] xl:mt-0;
   }
   .header-title {
     @apply text-[80px] leading-normal tracking-[4px] font-bold text-[var(--color-gray-6)];
     @apply xl:text-[260px] xl:leading-[320px] xl:tracking-[13px];
   }
   .header-float-item {
-    @apply px-[var(--sp-3)] py-[var(--sp-1)] btn rounded-full bg-[var(--color-gray-1)] flex items-center gap-[var(--sp-2)] absolute top-[98px] left-3;
+    @apply px-[var(--sp-3)] py-[var(--sp-1)] rounded-full bg-[var(--color-gray-1)] flex items-center gap-[var(--sp-2)] absolute top-[98px] left-3;
     @apply xl:px-[var(--sp-5)] xl:py-[var(--sp-2)] xl:top-[calc(50%-44px)] xl:left-[-20px] xl:right-auto;
+    @apply 2xl:top-[calc(100%-44px)];
   }
   .header-bg {
     background: url("../src/images/Black-01.png");
-    @apply w-[305px] h-[344px] xl:w-[361px] xl:h-[407px] bg-center bg-no-repeat bg-[length:305px_344px] xl:bg-[length:361px_407px];
+    @apply w-[305px] h-[344px] bg-center bg-no-repeat bg-[length:305px_344px];
+    @apply xl:w-[361px] xl:h-[407px] xl:bg-[length:361px_407px];
+  }
+  .event-card {
+    @apply relative w-full flex flex-col gap-[calc(var(--sp-3)+18px)];
+    @apply xl:gap-[calc(var(--sp-3)+12px)] xl:flex-row;
   }
   .donation-card {
     @apply w-full border-2 border-[var(--color-primary-1)] p-[var(--sp-3)] rounded-[var(--sp-3)] flex justify-between items-center transition-all duration-300;
