@@ -1,6 +1,40 @@
+import { useLayoutEffect, useRef } from "react";
 import IssueCard from "./card";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function TabContent({ state, title, item }) {
+  const el = useRef();
+
+  useLayoutEffect(() => {
+    function hide(element) {
+      gsap.set(element, { opacity: 0, scale: 0, visibility: "hidden" });
+    }
+    function animation(element) {
+      gsap.to(element, {
+        opacity: 100,
+        scale: 1,
+        visibility: "visible",
+        duration: 1,
+      });
+    }
+    let ctx = gsap.context(() => {
+      gsap.utils.toArray(".issue-card").forEach((element) => {
+        ScrollTrigger.create({
+          trigger: element,
+          start: "top 75%",
+          end: "+=1000",
+          onEnter: () => animation(element),
+          onEnterBack: () => animation(element),
+          onLeave: () => hide(element),
+          onLeaveBack: () => hide(element),
+        });
+      });
+    }, el);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div
       className={
@@ -11,7 +45,7 @@ export default function TabContent({ state, title, item }) {
       <p className="text-[var(--color-primary-1)] title-28 text-center mb-[var(--sp-6)]">
         {title}
       </p>
-      <ul className="flex-col gap-[var(--sp-5)] lg:flex-row lg:gap-0 lg:items-start">
+      <ul ref={el} className="flex-col gap-[var(--sp-5)] lg:flex-row lg:gap-0 lg:items-start">
         <IssueCard
           img={item[0].img}
           title={item[0].subtitle}

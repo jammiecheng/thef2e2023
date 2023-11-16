@@ -1,6 +1,6 @@
 export default function IssueCard({ img, title, content }) {
   return (
-    <li className="px-[var(--sp-5)] flex flex-col items-center justify-center gap-[var(--sp-2)] relative xl:w-1/3">
+    <li className="issue-card">
       <div className="z-20">{img}</div>
       <p className="title-28 z-20">{title}</p>
       <p className="text-center z-20">{content}</p>

@@ -2,7 +2,17 @@ import { useState } from "react";
 import SectionTitle from "../section-title";
 import Tab from "./tab";
 import TabContent from "./tabContent";
-import { PiggyBank, Park, FirstAidKit, Handshake, Storefront, PawPrint, Buildings, BowlFood, Video } from "@phosphor-icons/react";
+import {
+  PiggyBank,
+  Park,
+  FirstAidKit,
+  Handshake,
+  Storefront,
+  PawPrint,
+  Buildings,
+  BowlFood,
+  Video,
+} from "@phosphor-icons/react";
 
 export default function Issues() {
   const [state, setState] = useState([1, 0, 0]);

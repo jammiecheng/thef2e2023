@@ -79,8 +79,12 @@
     @apply xl:w-[361px] xl:h-[407px] xl:bg-[length:361px_407px];
   }
   .event-card {
-    @apply relative w-full flex flex-col gap-[calc(var(--sp-3)+18px)];
+    @apply relative w-full flex flex-col gap-[calc(var(--sp-3)+18px)] translate-x-full;
     @apply xl:gap-[calc(var(--sp-3)+12px)] xl:flex-row;
+  }
+  .issue-card {
+    @apply px-[var(--sp-5)] flex flex-col items-center justify-center gap-[var(--sp-2)] relative scale-0;
+    @apply xl:w-1/3;
   }
   .donation-card {
     @apply w-full border-2 border-[var(--color-primary-1)] p-[var(--sp-3)] rounded-[var(--sp-3)] flex justify-between items-center transition-all duration-300;

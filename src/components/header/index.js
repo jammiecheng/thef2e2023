@@ -8,7 +8,7 @@ export default function Header() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["喵喵權益我帶頭"],
-      typeSpeed: 50,
+      typeSpeed: 100,
     });
     return () => {
       typed.destroy();
@@ -19,7 +19,7 @@ export default function Header() {
     <header id="header" className="header">
       <p ref={el} className="header-title">
         喵喵權益
-        {window.innerWidth > 768 ? <></> : <br />}
+        {window.innerWidth > 768 ? <></> : <br></br>}
         我帶頭
       </p>
       <p className="header-float-item">
