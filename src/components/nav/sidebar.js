@@ -31,7 +31,7 @@ export default function SideBar() {
       ></div>
       <div
         className={
-          "fixed bg-[var(--color-gray-6)] w-3/5 top-0 bottom-0 -right-full px-[var(--sp-3)] py-[var(--sp-5)] z-50 transition-all " +
+          "sidebar fixed bg-[var(--color-gray-6)] w-3/5 top-0 bottom-0 -right-full px-[var(--sp-3)] py-[var(--sp-5)] z-50 transition-all " +
           (showSidebar && !isDesktop ? "right-0" : "opacity-0")
         }
       >
@@ -46,7 +46,7 @@ export default function SideBar() {
           <li>
             <a
               href="#donation"
-              className="flex items-center px-[var(--sp-3)] py-[var(--sp-2)] btn-sm gap-[var(--sp-2)]"
+              className="sidebar-hover-none flex items-center px-[var(--sp-3)] py-[var(--sp-2)] btn-sm gap-[var(--sp-2)]"
             >
               <HandCoins color="#000000" weight="regular" size={24} />
               小額捐款
